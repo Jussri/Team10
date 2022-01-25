@@ -1,0 +1,12 @@
+body{
+    background-color: ghostwhite;
+}
+article{
+    text-align: center;
+    background-color: beige;
+    flex-wrap: wrap;
+}
+.leftbar{
+    background-color: ghostwhite;
+    
+}
