@@ -1,9 +1,13 @@
 
 body{
-background-image: url("https://cdn.wallpapersafari.com/22/18/riY3Ba.jpg");  
+    background-image: url("https://cdn.wallpapersafari.com/22/18/riY3Ba.jpg");   
     background-size: cover;
+    height: 500px; 
+    background-position: center; 
+    background-repeat: repeat; 
+  }
    
-}
+
 .row{
     text-align: center;
     margin-left: auto;
