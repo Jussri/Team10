@@ -1,15 +1,23 @@
-section{
-    background-image: url("https://www.manatt.com/Manatt/media/Media/Images/Jumbotron/TV_Screens.jpg?ext=.jpg");
-    background-size: cover;
-}
+
 
 article{
     text-align: center;
-    color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-  
+  h1{
+      color: black;
+      text-align: center;
+      background-color: lightskyblue;
+      
+  }
 
+  section{
+      background-color: lightblue;
+  }
 * {
     box-sizing: border-box;
     margin: 0;
@@ -17,6 +25,11 @@ article{
 
 }
 
+footer {
+    text-align: right;
+    color: black;
+    background-color: lightskyblue;
+}
 li, a, button {
     font-weight: 500;
     font-size: 25px;
@@ -28,6 +41,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
+    background-image: url("https://www.manatt.com/Manatt/media/Media/Images/Jumbotron/TV_Screens.jpg?ext=.jpg");
+    background-size: cover;
+    
 }
 
 .logo {
@@ -47,7 +63,7 @@ header {
 }
 
 .nav_links li a:hover {
-    color: blue;
+    color: cornflowerblue;
 }
 
 button {
