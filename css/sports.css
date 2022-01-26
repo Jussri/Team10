@@ -1,3 +1,11 @@
+nav {
+    flex-direction: row;
+    display: flex;
+    font-size: x-large;
+    background-color: blueviolet;
+    height: 100px;
+}
 h1 {
     text-align: center;
+    
 }
