@@ -3,9 +3,13 @@ body{
     background-size: cover;
 }
 
+
+
     header{
         background-color: rgb(69, 186, 171);
     }
+
+    
    
     .weather{
         border: 1px solid white;
