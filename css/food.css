@@ -1,10 +1,9 @@
 
 body{
     background-image: url("https://cdn.wallpapersafari.com/22/18/riY3Ba.jpg");   
-    background-size: cover;
-    height: 500px; 
-    background-position: center; 
-    background-repeat: repeat; 
+   
+    background-repeat:repeat;
+    background-size: contain;
   }
   * {
     box-sizing: border-box;
@@ -28,6 +27,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
+    background-color: rgb(211, 198, 174);
 }
 
 .logo {
@@ -61,7 +61,15 @@ button {
 button:hover {
     background-color: cornflowerblue;
 }
- 
+ul.ing > li, li{
+     
+    color: black;
+    font-size: medium;
+    font-weight: 400;
+    text-align: center;
+    list-style-type: none; 
+    
+}
 
 
 .row{
@@ -71,6 +79,5 @@ button:hover {
 }
 footer{
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: rgb(211, 198, 174);
 }
