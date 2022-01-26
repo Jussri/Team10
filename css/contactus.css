@@ -124,3 +124,8 @@ button {
 button:hover {
     background-color: #7b1fa207;
 }
+
+footer {
+    text-align: right;
+    color: black;
+}
