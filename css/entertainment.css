@@ -25,11 +25,7 @@ article{
 
 }
 
-footer {
-    text-align: right;
-    color: black;
-    background-color: lightskyblue;
-}
+
 li, a, button {
     font-weight: 500;
     font-size: 25px;
@@ -76,4 +72,9 @@ button {
 
 button:hover {
     background-color: cornflowerblue;
+}
+footer {
+    text-align: right;
+    color: black;
+    background-color: lightskyblue;
 }
