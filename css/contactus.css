@@ -31,20 +31,7 @@ p {
     color: #7B1FA2
 }
 
-.icons {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #fff;
-    display: inline-block;
-    display: flex;
-    justify-content: center;
-    align-items: center
-}
 
-.icons i {
-    font-size: 20px
-}
 
 .forms {
     padding: 20px
