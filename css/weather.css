@@ -7,3 +7,11 @@ body{
         background-color: rgb(69, 186, 171);
     }
    
+    .weather{
+        border: 1px solid white;
+        margin-top: 10rem;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .text-center{
+        color: white;
+    }
