@@ -1,10 +1,11 @@
-body{
-    background-color: ghostwhite;
+section{
+    background-image: url("https://www.manatt.com/Manatt/media/Media/Images/Jumbotron/TV_Screens.jpg?ext=.jpg");
+    background-size: cover;
 }
 article{
     text-align: center;
-    background-color: beige;
     flex-wrap: wrap;
+    color: white;
 }
 .leftbar{
     background-color: ghostwhite;
