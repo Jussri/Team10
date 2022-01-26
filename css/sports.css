@@ -1,29 +1,36 @@
+ul.gg, ul.ggs {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     position: relative;
 }
 
 .center {
-    position: absolute;
+    position:absolute;
     top: 50%;
     width: 100%;
-}
-
-img {
-    width: 100%;
-    height: auto;
+    font-size: large;
+    color: gold;
 }
 
 .playoff {
-    font-size: medium;
     background-color:rgba(0, 0, 0, 0.424);
     color: whitesmoke;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .playoffs {
-    text-align:left;
-    font-size: medium;
     background-color: rgba(0, 0, 0, 0.424);
     color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 
@@ -102,3 +109,7 @@ footer {
 
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
