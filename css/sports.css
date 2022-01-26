@@ -1,3 +1,25 @@
+
+
+.logo {
+    cursor: pointer;
+    width: 200px;
+}
+
+.nav_links {
+    list-style: none;
+
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+
+}
+
+.nav_links li a:hover {
+    color: blue;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -23,36 +45,16 @@ header {
     padding: 30px 10%;
 }
 
-.logo {
-    cursor: pointer;
-    width: 200px;
-}
-
-.nav_links {
-    list-style: none;
-
-}
-
-.nav_links li {
-    display: inline-block;
-    padding: 0px 20px;
-
-}
-
-.nav_links li a:hover {
-    color: blue;
-}
-
 button {
     padding: 9px 25px;
-    background-color: cornflowerblue;
+    background-color: rgba(255, 0, 0, 0.657);
     border: none;
     cursor:pointer;
 
 }
 
 button:hover {
-    background-color: cornflowerblue;
+    background-color: rgba(255, 0, 0, 0.253);
 }
 
 body {
@@ -63,7 +65,7 @@ body {
 section {
     color: white;
     font-size: large;
-    background-color: rgba(255, 0, 0, 0.657)
+    background-color: rgba(255, 0, 0, 0.37)
 }
 
 footer {
@@ -71,3 +73,4 @@ footer {
     color: white;
 
 }
+
