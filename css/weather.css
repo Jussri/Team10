@@ -11,7 +11,7 @@ header {
     width: 200px;
     
 }
-li, a, button {
+li, a {
     font-weight: 500;
     font-size: 25px;
     color: whitesmoke
@@ -28,14 +28,16 @@ li, a, button {
 .nav_links li a:hover {
     color: rgb(176 25 25 / 68%);
 }
-button {
+.cta {
     padding: 9px 25px;
     background-color: rgb(176 25 25 / 68%);
     border: none;
     cursor:pointer;
+    text-decoration: none;
 }
-button:hover {
+.cta:hover {
     background-color: rgb(176 25 25 / 58%);
+    color:white;
 }
 .column-content{
     background-color: rgb(176 25 25 / 68%);
