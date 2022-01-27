@@ -1,13 +1,17 @@
 body{
     background-image: url("https://live.staticflickr.com/8561/15930593790_0e2300f383_b.jpg");
-    background-size: cover;
+    background-size: cover;   
 }
 
-    .weather{
-        border: 1px solid white;
-        margin-top: 10rem;
-        background-color: rgba(0, 0, 0, 0.5);
-        text-align: center;
+    .box1{
+        border: 1px solid black;
+  margin: 25px 50px;
+  background-color: lightblue;
+    }
+    .box2{
+        border: 1px solid black;
+  margin: 7px 80px 7px 80px;
+  background-color: lightblue;
     }
     .text-center{
         color: white;
@@ -79,17 +83,8 @@ body{
     button:hover {
         background-color: cornflowerblue;
     }
-    .container{
-        
-        text-align: center;
-        
-        width: 50%;
-        border: 3px solid green;
-    }
-    .row{
-        margin: auto;
-  width: 50%;
-  border: 3px solid green;
-  padding: 10px;
+    
+    
+    
 
-    }
+    
