@@ -1,11 +1,15 @@
+body{
+    
+}
 
-
-article{
+.container{
     text-align: center;
     color: black;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    background: whitesmoke;
+    flex-direction: row;
+    font-size: medium;
+    padding: 10px;
+    margin: 10px;
 }
 
   h1{
@@ -14,10 +18,19 @@ article{
       background-color: lightskyblue;
       
   }
+  h2, h3{
+      font-size: large;
+      flex: 200px;
+  }
 
   section{
-      background-color: lightblue;
+      background-image: url("https://static.vecteezy.com/system/resources/thumbnails/003/127/954/small/abstract-template-blue-background-white-squares-free-vector.jpg");
+      flex-wrap: wrap;
+      display: flex;
   }
+  
+      
+  
 * {
     box-sizing: border-box;
     margin: 0;
