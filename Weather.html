@@ -7,54 +7,77 @@
     <title>Weather</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/weather.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    
 </head>
 <body>
-    <header>
-        <img class="logo" src="https://i.imgur.com/9l7ombZ.png" alt="logo">
-        <nav>
-          <ul class="nav_links">
-            <li><a href="index.html">Entertainment</a></li>
-            <li><a href="food.html">Food</a></li>
-            <li><a href="Sports.html">Sports</a></li>
-            <li><a href="Weather.html">Weather</a></li>
-          </ul>
-        </nav>
-        <a class="cta" href="contactus.html" ><button>Contact Us</button></a>
+    <header class="container">
+        <div class="d-md-flex align-items-center justify-content-between">
+            <img class="logo" src="https://i.imgur.com/9l7ombZ.png" alt="logo">
+            <nav>
+              <ul class="nav_links ps-0">
+                <li><a href="index.html">Entertainment</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="Sports.html">Sports</a></li>
+                <li><a href="Weather.html">Weather</a></li>
+              </ul>
+            </nav>
+            <a class="cta" href="contactus.html" ><button>Contact Us</button></a>
+        </div>   
     </header>
+
     <div class= "container">
-        <div class= "col-4 row">
-            <div class= "weather auto">
-                <div class= "area" ;>
-                <h1 id="location" class="text-center">Today</h1>
+        <div class="row">
+            <div class= "col-12">
+                <div class="column-content">
+                    <h1 class="text-center">Local weather in Hämeenlinna</h1>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at risus semper lectus pharetra vestibulum. Vivamus vel ipsum interdum, auctor massa dignissim, porta odio. Nulla et efficitur mauris. In imperdiet elit eu turpis mollis molestie. Curabitur faucibus et tortor quis tempus. Integer nunc dui, condimentum nec turpis quis, rutrum interdum turpis. Vivamus ac eros tempor, tempus mauris ac, blandit est. Proin ligula metus, ultrices ultrices ullamcorper dignissim, facilisis et est. Nulla sit amet massa semper ex eleifend malesuada. Aenean sollicitudin felis nec neque imperdiet, vel laoreet sapien suscipit.S</p>
                 </div>
-                <p>-5 &#8451;</p>
-                    <span style='font-size:100px;'>	&#x1F328;</span>
-                    
-            </div>
-                </div>
-                
             </div>
         </div>
-
-        <div class= "container">
-            <div class= "col-4 row">
-                <div class= "weather auto">
-                    <div class= "area" ;>
-                    <h1 id="location" class="text-center">Tomorrow</h1>
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center">Weather Forecast</h2>
+            </div>
+            <div class= "col-md-3">
+                <div class="column-content">
+                    <div class= "weather">
+                        <h3>Today</h3>
+                        <span class="icon">	&#x1F324;</span>    
+                        <span class="text"> -5 &#8451;</span>
                     </div>
-                    <p>-5 &#8451;</p>
-                        <span style='font-size:100px;'>	&#x1F324;</span>
-                        
-                </div>
-                    </div>
-                    
                 </div>
             </div>
-
-    <footer>
+            <div class= "col-md-3">
+                <div class="column-content">
+                    <div class= "weather">              
+                        <h3>Tomorrow</h3>
+                        <span class="icon">	&#x26C5;</span>    
+                        <span class="text"> -6 &#8451;</span>
+                    </div>
+                </div>
+            </div>
+            <div class= "col-md-3">
+                <div class="column-content">
+                    <div class= "weather">
+                        <h3>Thursday</h3>
+                        <span class="icon">	&#x2601;</span>    
+                        <span class="text"> -9 &#8451;</span>
+                    </div>
+                </div>
+            </div>
+            <div class= "col-md-3">
+                <div class="column-content">
+                    <div class= "weather">
+                        <h3>Friday</h3>
+                        <span class="icon">	&#x1F328;</span>    
+                        <span class="text"> -3 &#8451;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="text-center">
         Team 10 @ 2022
-       </footer>
+    </footer>
 </body>
 </html>
