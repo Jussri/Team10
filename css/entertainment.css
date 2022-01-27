@@ -1,11 +1,9 @@
-body{
-    
-}
+
 
 .container{
     text-align: center;
     color: black;
-    background: lightgray;
+    background: rgb(112, 200, 255);
     flex-direction: row;
     font-size: medium;
     padding: 50px;
@@ -33,6 +31,10 @@ body{
   }
   p{
       flex: 200px;
+  }
+  p2{
+      background-color: lightskyblue;
+      font-size: small;
   }
       
   
