@@ -5,11 +5,14 @@ body{
 .container{
     text-align: center;
     color: black;
-    background: whitesmoke;
+    background: lightgray;
     flex-direction: row;
     font-size: medium;
-    padding: 10px;
-    margin: 10px;
+    padding: 50px;
+    margin: 50px;
+    max-width: fit-content;
+    
+    
 }
 
   h1{
@@ -28,7 +31,9 @@ body{
       flex-wrap: wrap;
       display: flex;
   }
-  
+  p{
+      flex: 200px;
+  }
       
   
 * {
