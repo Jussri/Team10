@@ -43,6 +43,12 @@ li, a {
     background-color: rgb(176 25 25 / 68%);
     padding: 15px;
 }
+.column-content1{
+    background-color: rgb(176 25 25 / 68%);
+    padding: 15px;
+    margin-top: 15px;
+   
+}
 .row + .row {
     margin-top: 15px
 }
