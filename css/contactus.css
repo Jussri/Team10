@@ -1,12 +1,17 @@
+
+
+/* Aida */
 body{
     background: url("https://i.imgur.com/g63vXfd.jpg");
     background-size: cover;
 }
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-
+.inputs{
+    max-width: 500px;
+    margin: auto;
+}
+ /* Most of the css code: Christian, Logo: Joona, Changes to header and .cta: Jussi */
+header {
+    margin: 30px 0;
 }
 
 li, a, button {
@@ -14,17 +19,20 @@ li, a, button {
     font-size: 25px;
     color: #7B1FA2
 }
+button {
+    padding: 9px 25px;
+    background-color: #7b1fa242;
+    border: none;
+    cursor:pointer;
+
+}
+
 
 h1 {
     text-align: center;
 
 }
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-}
+
 
 .logo {
     cursor: pointer;
@@ -45,24 +53,21 @@ header {
 .nav_links li a:hover {
     color: blue;
 }
-
-button {
+.cta {
     padding: 9px 25px;
     background-color: #7b1fa242;
     border: none;
     cursor:pointer;
-
+    text-decoration: none;
 }
-
-button:hover {
+.cta:hover {
     background-color: #7b1fa207;
+    color:white;
 }
+
+
 
 footer {
-    text-align: right;
+    text-align: center;
     color: black;
-}
-.inputs{
-    max-width: 500px;
-    margin: auto;
 }
