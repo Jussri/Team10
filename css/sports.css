@@ -4,9 +4,7 @@ ul.gg, ul.ggs {
     padding: 0;
 }
 
-.container {
-    position: relative;
-}
+
 
 .center {
     position:absolute;
@@ -54,7 +52,8 @@ ul.gg, ul.ggs {
     color: blue;
 }
 
-li, a, button {
+
+li, a {
     font-weight: 500;
     font-size: 25px;
     color: whitesmoke
@@ -66,10 +65,7 @@ h1, h2, h3, h4 {
     
 }
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
+    margin: 30px 0;
 }
 
 .cta {
