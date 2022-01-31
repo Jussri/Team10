@@ -54,13 +54,6 @@ ul.gg, ul.ggs {
     color: blue;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-   
-}
-
 li, a, button {
     font-weight: 500;
     font-size: 25px;
@@ -79,16 +72,16 @@ header {
     padding: 30px 10%;
 }
 
-button {
+.cta {
     padding: 9px 25px;
-    background-color: rgba(255, 0, 0, 0.657);
+    background-color: rgb(176 25 25 / 68%);
     border: none;
     cursor:pointer;
-
+    text-decoration: none;
 }
-
-button:hover {
-    background-color: rgba(255, 0, 0, 0.253);
+.cta:hover {
+    background-color: rgb(176 25 25 / 58%);
+    color:white;
 }
 
 body {
