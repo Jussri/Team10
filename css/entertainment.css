@@ -1,17 +1,8 @@
-
-
-.container{
-    text-align: center;
-    color: black;
-    background: rgb(112, 200, 255);
-    flex-direction: row;
-    font-size: medium;
-    padding: 50px;
-    margin: 50px;
-    max-width: fit-content;
-    
-    
+body{
+    background-image: url("https://www.manatt.com/Manatt/media/Media/Images/Jumbotron/TV_Screens.jpg?ext=.jpg");
+    background-size: cover;
 }
+
 
   h1{
       color: black;
@@ -28,6 +19,7 @@
       background-image: url("https://static.vecteezy.com/system/resources/thumbnails/003/127/954/small/abstract-template-blue-background-white-squares-free-vector.jpg");
       flex-wrap: wrap;
       display: flex;
+      text-align: center;
   }
   p{
       flex: 200px;
@@ -37,28 +29,28 @@
       font-size: small;
   }
       
-  
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-
-}
-
-
-li, a, button {
+  .articlebox{
+    text-align: center;
+    color: black;
+    background: rgb(112, 200, 255);
+    flex-direction: row;
+    font-size: medium;
+    padding: 50px;
+    margin: 50px;
+    max-width: fit-content;
+  }
+li, a {
     font-weight: 500;
     font-size: 25px;
     color: whitesmoke
 }
 
 header {
-    display: flex;
+
     justify-content: space-between;
-    align-items: center;
+
     padding: 30px 10%;
-    background-image: url("https://www.manatt.com/Manatt/media/Media/Images/Jumbotron/TV_Screens.jpg?ext=.jpg");
-    background-size: cover;
+    
     
 }
 
@@ -82,19 +74,19 @@ header {
     color: cornflowerblue;
 }
 
-button {
+.cta {
     padding: 9px 25px;
-    background-color: cornflowerblue;
+    background-color: lightblue;
     border: none;
     cursor:pointer;
-
+    text-decoration: none;
 }
-
-button:hover {
-    background-color: cornflowerblue;
+.cta:hover {
+    background-color: blue;
+    color:white;
 }
 footer {
-    text-align: right;
+    text-align: center;
     color: black;
     background-color: lightskyblue;
 }
