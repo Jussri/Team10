@@ -33,7 +33,7 @@ body{
     text-align: center;
     color: black;
     background: rgb(112, 200, 255);
-    flex-direction: row;
+    flex-direction: wrap;
     font-size: medium;
     padding: 50px;
     margin: 50px;
