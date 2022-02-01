@@ -2,6 +2,7 @@ ul.gg, ul.ggs {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 
@@ -89,7 +90,7 @@ section {
     color: white;
     font-size: large;
     background-color: rgba(0, 0, 0, 0.424);
-    text-align: center;
+    text-align: left;
 }
 
 footer {
