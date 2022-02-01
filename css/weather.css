@@ -42,11 +42,12 @@ li, a {
 .column-content{
     background-color: rgb(176 25 25 / 68%);
     padding: 15px;
+    margin-bottom: 10px;
 }
 .column-content1{
     background-color: rgb(176 25 25 / 68%);
     padding: 15px;
-    margin-top: 15px;
+    margin-top: 10px;
    
 }
 .row + .row {
