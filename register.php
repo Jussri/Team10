@@ -22,9 +22,9 @@ catch(Exception $e){
 }
 
 
-$sql="insert into users (email, password) values(?, SHA2(?, 256))";
+$sql="insert into users (id, firstname, lastname, email, password) values(?, SHA2(?, 256))";
     $stmt=mysqli_prepare($yhteys, $sql);
-    mysqli_stmt_bind_param($stmt, 'ss', $user->email, $user->password);
+    mysqli_stmt_bind_param($stmt, 'issss', $user->id, $user->firstname, $user->lastname, $user->email, $user->password);
     mysqli_stmt_execute($stmt);
     mysqli_close($yhteys);
     
