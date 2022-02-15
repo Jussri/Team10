@@ -1,54 +1,38 @@
 <?php
 
-if (isset($_POST["etunimi"])){
-    $etunimi=$_POST["etunimi"];
+<<<<<<< HEAD
 
+=======
+if ($_POST["email"]) && isset($_POST["password"]) &&
+isset($_POST["name"]) && isset($_POST["lastname"])) {
+$email=$_POST["email"];
+$password=$_POST["password"];
+$name=$_POST["name"]:
+$lastname=$_POST["lastname"];
 }
 else{
-    header("Location:contactus.html");
+header("Location:register.html");
+exit;
+}
+mysqli_report(MYSQLI_REPORT_ALL ^ MYSQLI_REPORT_INDEX);
+try{
+    $yhteys=mysqli_connect("db", "root", "password", "users");
+}
+catch(Exception $e){
+    print "Error!";
     exit;
-
-}
-
-if (isset($_POST["sukunimi"])){
-    $sukunimi=$_POST["sukunimi"];
-
-}
-else{
-    $sukunimi="";
-
-}
-if (isset($_POST["ika"])){
-    $ika=$_POST["ika"];
-
-}
-else{
-    $ika="";
-
 }
 
 
-$yhteys = mysqli_connect();
-
-// Check connection
-if (!$yhteys) {
-	die("Yhteyttä ei voitu muodostaa: " . mysqli_connect_error());
+$sql="insert into users (email, password) values(?, SHA2(?, 256))";
+    $stmt=mysqli_prepare($yhteys, $sql);
+    mysqli_stmt_bind_param($stmt, 'ss', $user->email, $user->password);
+    mysqli_stmt_execute($stmt);
+    mysqli_close($yhteys);
+    
 }
-echo "Yhteys OK."; // debug
-
-$tietokanta=mysqli_select_db($yhteys, "users");
-if (!$tietokanta) {
-	die("Tietokannan valinta epäonnistui: " . mysqli_connect_error());
+catch(Exception $e){
+    print "This e-mail already exists in the system!";
 }
-echo "Tietokanta OK."; // debug
-
-$sql="insert into users(id, firstname, lastname, email, password) values(?, ?, ?, ?, ?)";
-$stmt=mysqli_prepare($yhteys, $sql);
-mysqli_stmt_bind_param($stmt, 'issss', $id, $firstname, $lastname, $email, $password);
-mysqli_stmt_execute($stmt);
-
-mysqli_stmt_close($stmt);
-mysqli_close($yhteys); 
 ?>
-
-
+>>>>>>> 5986098c8561c9718f81f9e87677affa1079866d
