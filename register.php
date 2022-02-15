@@ -1,8 +1,6 @@
 <?php
 
-<<<<<<< HEAD
 
-=======
 if ($_POST["email"]) && isset($_POST["password"]) &&
 isset($_POST["name"]) && isset($_POST["lastname"])) {
 $email=$_POST["email"];
@@ -35,4 +33,4 @@ catch(Exception $e){
     print "This e-mail already exists in the system!";
 }
 ?>
->>>>>>> 5986098c8561c9718f81f9e87677affa1079866d
+
