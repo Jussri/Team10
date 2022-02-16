@@ -6,7 +6,7 @@
 session_start();
 
 if (!isset($_SESSION["user_ok"])){
-    $_SESSION["return address"]="login.php";
+    $_SESSION["returnaddress"]="login.php";
     header("Location:loginin.php");
     exit;
 
