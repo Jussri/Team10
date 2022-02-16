@@ -19,5 +19,3 @@ print "</ol>";
 
 mysqli_close($yhteys);
 ?>
-
-<?php
