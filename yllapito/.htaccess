@@ -1,0 +1,4 @@
+AuthUserFile /var/www/html/php/yllapito/.htpasswd
+AuthType Basic
+AuthName "Anna tunnus ja salasana"
+Require valid-user
