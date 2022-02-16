@@ -22,6 +22,7 @@ catch(Exception $e){
 
 
 $sql="insert into users (id, firstname, lastname, email, password) values(?, SHA2(?, 256))";
+try{
     $stmt=mysqli_prepare($yhteys, $sql);
     mysqli_stmt_bind_param($stmt, 'issss', $id, $ifirstname, $lastname, $email, $password);
     mysqli_stmt_execute($stmt);
