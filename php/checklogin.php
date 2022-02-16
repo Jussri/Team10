@@ -7,7 +7,7 @@ $password=$_POST["password"];
 
 }
 else{
-    header("Location:register.html");
+    header("Location:register2.html");
     exit;
     }
 
