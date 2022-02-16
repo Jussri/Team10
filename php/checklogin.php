@@ -14,7 +14,7 @@ else{
 $yhteys=mysqli_connect("db", "root", "password", "users");
 $tietokanta=mysqli_select_db($yhteys, "users");
 
-$sql="select * from users where email=? and password=md5(?)";
+$sql="select * from users where email=? and password=sha2(?,256)";
 $stmt=mysqli_prepare($yhteys, $sql);
 mysqli_stmt_bind_param($stmt, "ss", $tunnus, $salasana);
 mysqli_execute($stmt);
