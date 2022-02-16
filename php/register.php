@@ -1,10 +1,10 @@
 <?php
 
 if isset($_POST["email"]) && isset($_POST["password"]) &&
-isset($_POST["name"]) && isset($_POST["lastname"])) {
+isset($_POST["firstname"]) && isset($_POST["lastname"])) {
 $email=$_POST["email"];
 $password=$_POST["password"];
-$name=$_POST["name"];
+$firstname=$_POST["firstname"];
 $lastname=$_POST["lastname"];
 }
 else{
