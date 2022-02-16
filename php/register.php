@@ -8,7 +8,7 @@ $firstname=$_POST["firstname"];
 $lastname=$_POST["lastname"];
 }
 else{
-header("Location:register.html");
+header("Location:register2.html");
 exit;
 }
 mysqli_report(MYSQLI_REPORT_ALL ^ MYSQLI_REPORT_INDEX);
@@ -20,11 +20,11 @@ catch(Exception $e){
     exit;
 }
 
-
-$sql="insert into users (id, firstname, lastname, email, password) values(?, SHA2(?, 256))";
+$user="user";
+$sql="insert into users (firstname, lastname, email, password, usertype) values(?,?,?, SHA2(?, 256),?)";
 try{
     $stmt=mysqli_prepare($yhteys, $sql);
-    mysqli_stmt_bind_param($stmt, 'issss', $id, $ifirstname, $lastname, $email, $password);
+    mysqli_stmt_bind_param($stmt, 'sssss', $firstname, $lastname, $email, $password, $user);
     mysqli_stmt_execute($stmt);
     mysqli_close($yhteys);
     
@@ -32,5 +32,6 @@ try{
 catch(Exception $e){
     print "This e-mail already exists in the system!";
 }
+
 ?>
 
