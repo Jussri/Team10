@@ -6,10 +6,7 @@ $password = "";
 $database = "users";
 
 $conn = mysqli_connect("db", "root", "password", "users");
-
 $results = $conn->query("SELECT * FROM users");
-
-
 ?>
 
 <?php while ($data = $results->fetch_assoc()): ?>
