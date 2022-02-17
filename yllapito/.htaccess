@@ -1,4 +1,4 @@
-AuthUserFile /var/www/html/php/yllapito/.htpasswd
+AuthUserFile "/var/www/html/yllapito/.htsalasanat"
 AuthType Basic
 AuthName "Anna tunnus ja salasana"
-Require valid-user
+Require user team10
