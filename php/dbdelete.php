@@ -28,6 +28,6 @@ print "<ol>";
 while ($rivi=mysqli_fetch_object($tulos)){
     print "<liv>id=$rivi->id firstname=$rivi->firstname lastname=$rivi->lastname email=$rivi->email password=$rivi->password usertype=$rivi->usertype <a href='dbdelete.php?poistettava=".$rivi->id."'>Delete</a><br>";
 }
-print "</ol>"
+print "</ol>";
 mysqli_close($yhteys);
 ?>
