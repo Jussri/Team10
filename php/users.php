@@ -1,21 +1,26 @@
 <?php
 
-try{
-    $yhteys=mysqli_connect("db", "root", "password", "users");
-}
-catch(Exception $e){
-    header("Error!");
-    exit;
-}
+$host = "db";
+$username = "root";
+$password = "";
+$database = "users";
 
-$tulos=mysqli_query($yhteys, "select * from users");
+$conn = mysqli_connect("db", "root", "password", "users");
+
+$results = $conn->query("SELECT * FROM users");
 
 
-print "<ol>";
-while ($rivi=mysqli_fetch_object($tulos)){
-    print "<li>$rivi->firstname $rivi->lastname</li>";
-}
-print "</ol>";
-
-mysqli_close($yhteys);
 ?>
+
+<?php while ($data = $results->fetch_assoc()): ?>
+    
+<li> 
+<tr>
+     <td><?php echo $data ['id']; ?></td>
+     <td><?php echo $data ['firstname']; ?></td>
+     <td><?php echo $data ['lastname']; ?></td>
+     <td><?php echo $data ['email']; ?></td>
+</tr>   
+</li>
+
+<?php endwhile; ?>    
