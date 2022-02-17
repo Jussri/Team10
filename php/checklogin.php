@@ -26,7 +26,7 @@ if ($rivi=mysqli_fetch_object($tulos)) {
     exit;
 }
 else{
-    header("Location:login2.php");
+    header("Location:users.php");
     exit;
 }
 ?>
