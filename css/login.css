@@ -1,0 +1,71 @@
+
+body{
+    background: url("https://alltopstartups.com/wp-content/uploads/2019/07/Factors-to-Consider-Before-Registering-a-Limited-Company.png");
+    background-size: cover;
+}
+.inputs{
+    max-width: 500px;
+    margin: auto;
+}
+ /* Most of the css code: Christian, Logo: Joona, Changes to header and .cta: Jussi */
+header {
+    margin: 30px 0;
+}
+
+li, a, button {
+    font-weight: 500;
+    font-size: 25px;
+    color: #7B1FA2
+}
+button {
+    padding: 9px 25px;
+    background-color: #7b1fa242;
+    border: none;
+    cursor:pointer;
+
+}
+
+
+h1 {
+    text-align: center;
+
+}
+
+
+.logo {
+    cursor: pointer;
+    width: 200px;
+}
+
+.nav_links {
+    list-style: none;
+
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+
+}
+
+.nav_links li a:hover {
+    color: blue;
+}
+.cta {
+    padding: 9px 25px;
+    background-color: #7b1fa242;
+    border: none;
+    cursor:pointer;
+    text-decoration: none;
+}
+.cta:hover {
+    background-color: #7b1fa207;
+    color:white;
+}
+
+
+
+footer {
+    text-align: center;
+    color: black;
+}
