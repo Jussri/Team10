@@ -32,6 +32,7 @@ Firstname: <input type='text' name='firstname' value='<?php print $rivi->firstna
 Lastname: <input type='text' name='lastname' value='<?php print $rivi->lastname;?>'><br>
 Password: <input type='text' name='password' value='<?php print $rivi->password;?>'><br>
 E-mail: <input type='text' name='email' value='<?php print $rivi->email;?>'><br>
+Usertype: <input type='text' name='usertype' value='<?php print $rivi->usertype;?>'><br>
 <input type='submit' name='ok' value='OK'><br>
 </form>
 <?php 
