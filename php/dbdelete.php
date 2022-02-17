@@ -16,7 +16,7 @@ if (!$tietokanta) {
 echo "Database OK";
 
 if (isset ($poistettava)){
-    $sql="delete from users where firstname=?";
+    $sql="delete from users where id=?";
     $stmt=mysqli_prepare($yhteys, $sql);
     mysqli_stmt_bind_param($stmt, 'i', $poistettava);
     mysqli_stmt_execute($stmt);
@@ -28,6 +28,6 @@ print "<ol>";
 while ($rivi=mysqli_fetch_object($tulos)){
     print "<liv>id=$rivi->id firstname=$rivi->firstname lastname=$rivi->lastname email=$rivi->email password=$rivi->password usertype=$rivi->usertype <a href='dbdelete.php?poistettava=".$rivi->id."'>Delete</a><br>";
 }
-print "</ol>"
+print "</ol>";
 mysqli_close($yhteys);
 ?>
