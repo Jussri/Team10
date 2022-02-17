@@ -16,7 +16,7 @@ if (!$tietokanta) {
 echo "Database OK";
 
 if (isset ($poistettava)){
-    $sql="delete from users where firstname=?";
+    $sql="delete from users where id=?";
     $stmt=mysqli_prepare($yhteys, $sql);
     mysqli_stmt_bind_param($stmt, 'i', $poistettava);
     mysqli_stmt_execute($stmt);
