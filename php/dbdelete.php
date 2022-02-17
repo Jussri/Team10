@@ -27,7 +27,7 @@ $tulos=mysqli_query($yhteys, "select * from users");
 print "<ol>";
 while ($rivi=mysqli_fetch_object($tulos)){
     print "<liv>id=$rivi->id firstname=$rivi->firstname lastname=$rivi->lastname email=$rivi->email password=$rivi->password usertype=$rivi->usertype " . 
-    "<a href='dbdelete.php?poistettava=".$rivi->id."'>Delete</a> <a href='modify.php?modify=".$rivi->id."'>Modify</a><br>";
+    "<a href='dbdelete.php?poistettava=".$rivi->id."'>Delete</a> <a href='modify.php?modify=".$rivi->id."'>Edit data</a><br>";
 }
 print "</ol>";
 mysqli_close($yhteys);
