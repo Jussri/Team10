@@ -30,7 +30,7 @@ try{
     
 }
 catch(Exception $e){
-    print "This e-mail already exists in the system!";
+    header("Location:/index.html");
 }
 
 ?>
