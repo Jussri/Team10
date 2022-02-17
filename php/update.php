@@ -28,7 +28,7 @@ if ($rivi=mysqli_fetch_object($tulos))
 ?>
 <form action='../php/update.php' method='post'>
 <div class="inputs">
-<input type='hidden' name='id' value='<?php print $rivi->id;?>'><br>
+<input type='text' name='firstname' value='<?php print $rivi->firstname;?>'><br>
 <input type='text' name='lastname' value='<?php print $rivi->lastname;?>' placeholder='Last name'><br>
 <input type='text' name='email' value='<?php print $rivi->email;?>' placeholder='E-mail'><br>
 <input type='password' name='password' value='<?php print $rivi->password;?>' placeholder='Password'><br>
