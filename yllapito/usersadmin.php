@@ -1,23 +1,22 @@
 <?php
 
 try{
-    $connection=mysqli_connect("db", "root", "password", "users");
+    $yhteys=mysqli_connect("db", "root", "password", "users");
 }
 catch(Exception $e){
     header("Error!");
     exit;
 }
 
-$results=mysqli_query($connection, "select * from users");
+$tulos=mysqli_query($yhteys, "select * from users");
 
 
 print "<ol>";
-while ($row=mysqli_fetch_object($results)){
-    print "<li>$row->firstname $row->lastname"." <a href='./php/dbdelete.php?poistettava=$row->id'>Delete</a> ". 
-    "<a href='../php/modify.php?modify=$row->id'> Edit data</a></li>";
+while ($rivi=mysqli_fetch_object($tulos)){
+    print "<li>$rivi->firstname $rivi->lastname"."<a href='./php/dbdelete.php?poistettava=$rivi->id'>Delete</a> ". 
+    "<a href='../php/modify.php?modify=$rivi->id'> Edit data</a></li>";
 }
 print "</ol>";
 
-mysqli_close($connection);
+mysqli_close($yhteys);
 ?>
-
