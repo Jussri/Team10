@@ -26,7 +26,7 @@ if (!$rivi=mysqli_fetch_object($tulos)){
     exit;
 }
 ?>
-<form action='../php/modify.php' method='post'>
+<form action='../php/update.php' method='post'>
 ID: <input type='text' name='id' value='<?php print $rivi->id;?>'><br>
 Firstname: <input type='text' name='firstname' value='<?php print $rivi->firstname;?>'><br>
 Lastname: <input type='text' name='lastname' value='<?php print $rivi->lastname;?>'><br>
