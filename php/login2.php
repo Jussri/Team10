@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head><title>Document</title></head>
+<head><title>Log in</title></head>
 <body>
 <?php
 print "<h2> Log in<h2>";
