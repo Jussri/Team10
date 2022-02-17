@@ -1,17 +1,31 @@
 <?php
 
-if (isset($_POST["email"]) && isset($_POST["password"]) &&
-isset($_POST["firstname"]) && isset($_POST["lastname"]) &&
-isset($_POST["id"]) && isset($_POST["usertype"])) {
-$email=$_POST["email"];
-$password=$_POST["password"];
-$firstname=$_POST["firstname"];
-$lastname=$_POST["lastname"];
-$id=$_POST["id"];
-$usertype=$_POST["usertype"]
+if (isset($_POST["email"])){
+    $email=$_POST["email"];
 }
 
-if (!isset($email) || isset($password) || isset($firstname) || isset($lastname) || isset($id) )){
+if (isset($_POST["password"])){
+    $password=$_POST["password"];
+} 
+
+if (isset($_POST["firstname"])){
+    $firstname=$_POST["firstname"];
+}
+
+if (isset($_POST["lastname"])){
+    $lastname=$_POST["lastname"];
+}
+
+if (isset($_POST["id"])){
+    $id=$_POST["id"];
+}
+
+ if (isset($_POST["usertype"])) {
+    $usertype=$_POST["usertype"];
+}
+
+
+if (!(isset($email) || isset($password) || isset($firstname) || isset($lastname) || isset($id) )){
     header("Location:dbdelete.php");
     exit;
 }
