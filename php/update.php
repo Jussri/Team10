@@ -45,7 +45,7 @@ mysqli_stmt_execute($stmt);
 mysqli_stmt_close($stmt);
 mysqli_close($yhteys);
   
-header("Location:dbdelete.php");
+header("Location:../yllapito/usersadmin.php");
 exit;
 
 ?>
