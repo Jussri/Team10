@@ -11,6 +11,7 @@ catch(Exception $e){
 $tulos=mysqli_query($yhteys, "select * from users");
 
 
+
 print "<ol>";
 while ($rivi=mysqli_fetch_object($tulos)){
     print "<li>$rivi->firstname $rivi->lastname"."<a href='../php/dbdelete.php?poistettava=$rivi->id'> Delete</a> ". 
