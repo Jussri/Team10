@@ -22,16 +22,15 @@ catch(Exception $e){
 
 $user="user";
 $sql="insert into users (firstname, lastname, email, password, usertype) values(?,?,?, SHA2(?, 256),?)";
-try{
+
     $stmt=mysqli_prepare($yhteys, $sql);
     mysqli_stmt_bind_param($stmt, 'sssss', $firstname, $lastname, $email, $password, $user);
     mysqli_stmt_execute($stmt);
     mysqli_close($yhteys);
     
-}
-catch(Exception $e){
+
     header("Location:/index.html");
-}
+exit;
 
 ?>
 
