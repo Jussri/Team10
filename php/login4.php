@@ -28,23 +28,18 @@ if(isset($_POST['submit']))
             header("Location:../yllapito/usersadmin.php");
             exit;
         }
-<<<<<<< HEAD
         if($row ['usertype']=='user')
         {
             
             header("Location:../php/users.php");
             exit;
-=======
-        else{
-            header("Location:../login.html");
->>>>>>> 5c97cc2fea5847f9c0eae913ea1b3d260c72954a
-        }
+       
                       
     } else {
         
        header("Location:../login.html");   
        exit;
     }
- 
+}
 }
 ?>
