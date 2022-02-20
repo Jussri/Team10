@@ -28,8 +28,8 @@ $sql="insert into users (firstname, lastname, email, password, usertype) values(
     mysqli_stmt_execute($stmt);
     mysqli_close($yhteys);
     
-
-    header("Location:/index.html");
+  
+    header("Location:urregistered.php");
 exit;
 
 ?>
