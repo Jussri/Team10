@@ -1,10 +1,5 @@
 <?php
 
-$host = "db";
-$username = "root";
-$password = "";
-$database = "users";
-
 $conn = mysqli_connect("db", "root", "password", "users");
 $results = $conn->query("SELECT * FROM users");
 ?>

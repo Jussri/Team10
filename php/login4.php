@@ -1,9 +1,5 @@
 <?php
 session_start();
-$host = "db";
-$username = "root";
-$password = "";
-$database = "users";
 
 //Luodaan yhteys tietokantaan
 $con = mysqli_connect("db", "root", "password", "users");
@@ -14,6 +10,7 @@ if(isset($_POST['submit']))
     $ps=mysqli_real_escape_string($con,$_POST['password']);
     //muutetaan salasana kryptattuun muotoon
     $pshsa2= hash("sha256", $ps);
+    // lisää tiedot sqllään
     $sql="select password,usertype from users where email='$em' and password='$pshsa2'";
     $data=mysqli_query($con,$sql);
     $count=mysqli_num_rows($data);

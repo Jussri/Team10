@@ -1,5 +1,6 @@
 <?php
 
+// yhteys tietokantaan
 try{
     $yhteys=mysqli_connect("db", "root", "password", "users");
 }
