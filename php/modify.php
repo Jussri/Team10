@@ -1,6 +1,6 @@
 <?php
-$modify=isset($_GET["modify"]) ? $_GET["modify"] : 0; //Tarkistetaan onko saatu kelvollinen syötee, jos ei hypätään usersadmin.php sivulle
-
+$modify=isset($_GET["modify"]) ? $_GET["modify"] : 0; 
+//Tarkistetaan onko saatu kelvollinen syötee, jos ei hypätään usersadmin.php sivulle
 if (empty($modify)){
     header("Location:../yllapito/usersadmin.php");
     exit;
