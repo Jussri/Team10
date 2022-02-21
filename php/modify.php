@@ -1,10 +1,10 @@
 <?php
-$modify=isset($_GET["modify"]) ? $_GET["modify"] : 0;
+$modify=isset($_GET["modify"]) ? $_GET["modify"] : 0; //Tarkistetaan onko saatu kelvollinen syötee, jos ei hypätään usersadmin.php sivulle
 
 if (empty($modify)){
     header("Location:../yllapito/usersadmin.php");
     exit;
-}
+}//Yhdistäminen tietokantaan, jos ei onnistu hypätään usersadmin.php sivulle.
 mysqli_report(MYSQLI_REPORT_ALL ^ MYSQLI_REPORT_INDEX);
 try{
     $yhteys=mysqli_connect("db", "root", "password", "users");
@@ -12,19 +12,20 @@ try{
 catch(Exception $e){
     header("Location:../yllapito/usersadmin.php");
     exit;
-}
+}//Haetaan kaikki tiedot tietokannasta id:n avulla, valmistellaan sql lause, lisätään arvot oikeisiin paikkoihin
+//suoritetaan sql lause
 $sql="select * from users where id=?";
 
 $stmt=mysqli_prepare($yhteys, $sql);
 mysqli_stmt_bind_param($stmt, 'i', $modify);
 mysqli_stmt_execute($stmt);
-
+//luetaan tietokantaan muokatut tiedot, jos jokin tyhjä -> usersadmin.php sivu
 $tulos=mysqli_stmt_get_result($stmt);
 
 if (!$rivi=mysqli_fetch_object($tulos)){
     header("Location:../yllapito/usersadmin.php");
     exit;
-}
+}//Jos kaikki ok siirtyvät tiedot lomakkeen kautta update.php post metodilla ja suljetaan tietokanta yhteys
 ?>
 <form action='../php/update.php' method='post'>
 ID: <input type='text' name='id' value='<?php print $rivi->id;?>'><br>
