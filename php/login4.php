@@ -9,10 +9,10 @@ $con = mysqli_connect("db", "root", "password", "users");
 
 if(isset($_POST['submit']))
 {
-    $unm=mysqli_real_escape_string($con,$_POST['email']);
+    $em=mysqli_real_escape_string($con,$_POST['email']);
     $ps=mysqli_real_escape_string($con,$_POST['password']);
     $pshsa2= hash("sha256", $ps);
-    $sql="select password,usertype from users where email='$unm' and password='$pshsa2'";
+    $sql="select password,usertype from users where email='$em' and password='$pshsa2'";
     $data=mysqli_query($con,$sql);
     $count=mysqli_num_rows($data);
 
@@ -33,13 +33,14 @@ if(isset($_POST['submit']))
             
             header("Location:../php/users.php");
             exit;
-       
-                      
-    } else {
+                     
+        } 
+        else  
+        {
         
-       header("Location:../login.html");   
-       exit;
+            header("Location:../login.html");   
+            exit;
+        }
     }
-}
 }
 ?>
